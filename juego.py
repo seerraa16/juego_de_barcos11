@@ -63,6 +63,7 @@ def jugar_una_partida():
 
     tablero = Tablero()
 
+
     while True:
         tablero.ver()
 

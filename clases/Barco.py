@@ -9,19 +9,20 @@ from juego import HORIZONTAL, ORIENTACIONES
 
 instances = []
 casillas_ocupadas = set()
+# performance / legibilidad:
+num_lineas = Conventions.tablero_num_lineas
+num_columnas = Conventions.tablero_num_columnas
+num2l = Conventions.generar_num_linea
+num2c = Conventions.generar_num_columna
 
 
-def __init__(self, longitud):
+def __init__(self, longitud, orientacion, tocado, hundido):
     self.longitud = longitud
     self.orientacion = choice(ORIENTACIONES)
     self.tocado = False
     self.hundido = False
 
-    # performance / legibilidad:
-    num_lineas = Conventions.tablero_num_lineas
-    num_columnas = Conventions.tablero_num_columnas
-    num2l = Conventions.generar_num_linea
-    num2c = Conventions.generar_num_columna
+
 
     while True:
         if self.orientacion == HORIZONTAL:
@@ -55,6 +56,7 @@ def __init__(self, longitud):
 
 
 @classmethod
-def generar_barcos(self,cls):
+def generar_barcos(cls):
     for longitud in Conventions.barcos_longitud:
-        self.longitud = longitud
+        cls(longitud, HORIZONTAL, False, False)
+        
