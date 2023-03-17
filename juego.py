@@ -3,10 +3,16 @@ import sys
 from clases import Barco
 from clases import Case
 from clases import Tablero
-from clases.Case import *
-from clases.Barco import *
-from clases.Tablero import *
-from clases.Conventions import *
+from clases.Conventions import (
+    tablero_num_lineas,
+    tablero_num_columnas,
+    generar_num_linea,
+    generar_num_columna,
+)
+from itertools import product, repeat
+from random import choice
+
+
 
 
 from introducir import (
@@ -68,6 +74,12 @@ def jugar_una_partida():
             return
 
 def new_func():
+    tablero = Tablero()
+        return tablero
+
+    return tablero
+
+def new_func1():
     tablero = Tablero()
     return tablero
 

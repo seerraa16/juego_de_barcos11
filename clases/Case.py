@@ -1,6 +1,7 @@
-from clases.Tablero import *
-from clases.Barco import *
-from Conventions import *
+from numpy import product
+from clases import Barco
+from clases import Tablero
+from clases.Conventions import generar_nombre_casilla
 
 
 instances = {}

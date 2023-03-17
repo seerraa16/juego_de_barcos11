@@ -1,6 +1,6 @@
-from clases.Tablero import *
-from clases.Case import *
-from clases.Conventions import *
+
+from clases import Conventions
+
 
 instances = []
 casillas_ocupadas = set()
