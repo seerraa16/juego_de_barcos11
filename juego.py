@@ -3,14 +3,6 @@ import sys
 from clases import Barco
 from clases import Case
 from clases import Tablero
-from clases.Conventions import (
-    tablero_num_lineas,
-    tablero_num_columnas,
-    generar_num_linea,
-    generar_num_columna,
-)
-from itertools import product, repeat
-from random import choice
 
 
 
@@ -34,14 +26,13 @@ VERTICAL = 1
 ORIENTACIONES = (VERTICAL, HORIZONTAL)
 
 def probar_fin_juego(self):
-        """Permite probar si el juego ha terminado o no"""
-        if len(Barco.casillas_ocupadas - self.casillas_jugadas) == 0:
-            print("Bravo. El juego ha terminado !")
-            return True
-
+    """Permite probar si el juego ha terminado o no"""
+    if len(Barco.casillas_ocupadas - self.casillas_jugadas) == 0:
+        print("Bravo. El juego ha terminado !")
+        return True
+    else:
         return False
-
-
+    
 def jugar_tirada(self):
         """Permite gestionar el dato introducido de una tirada"""
         while True:
