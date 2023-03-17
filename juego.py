@@ -73,17 +73,6 @@ def jugar_una_partida():
             tablero.ver()
             return
 
-def new_func():
-    tablero = Tablero()
-        return tablero
-
-    return tablero
-
-def new_func1():
-    tablero = Tablero()
-    return tablero
-
-
 def elegir_jugarOtra():
     return solicitar_introducir_si_o_no(
         "¿Desea volver a jugar? ? [s/n]")

@@ -6,9 +6,10 @@ from clases.Case import generar_casillas
 
 
 
-
+@classmethod
 def __init__(self):
 # Creamos las casillas:
+
   generar_casillas()
 
   # Creamos los barcos:
