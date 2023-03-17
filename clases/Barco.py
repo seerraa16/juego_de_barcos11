@@ -55,9 +55,13 @@ def instanciar(self):
                 casilla.contiene_barco = True
             # Agregar estas casillas a las casillas ocupadas :
             casillas_ocupadas.update(self.casillas)
-
-
-
+            # break relativo al "for existente in barcos:"
+            break
+    else:
+        # break relativo al "while True:"
+        return
+    
+    
 def generar_barcos(self):
         while True:
             self.longitud = choice(Conventions.barcos_longitud)

@@ -2,6 +2,7 @@ from numpy import product
 from clases import Barco
 from clases import Tablero
 from clases import Case
+from juego import CASO_AGUA, CASO_NO_JUGADO, CASO_TOCADO
 from clases.Conventions import (
     tablero_num_lineas,
     tablero_num_columnas,
@@ -9,10 +10,6 @@ from clases.Conventions import (
     generar_num_columna,
     generar_nombre_casilla
 )
-from juego import CASO_AGUA, CASO_NO_JUGADO, CASO_TOCADO
-
-
-
 instances = {}
 jugadas = set()
 
@@ -20,10 +17,15 @@ def __init__(self, x, y):
   # Adición de las coordenadas
   self.x = x
   self.y = y
-  # Queremos poder acceder a una casilla a partir de sus coordenadas
+
+# Queremos poder acceder a una casilla a partir de sus coordenadas
+
   instances[x, y] = self
   
   # Generación del nombre de la casilla
+  
+
+
   self._generar_nombre()
 
   # Queremos poder acceder a una casilla a partir de su nombre
