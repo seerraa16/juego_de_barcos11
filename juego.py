@@ -1,8 +1,5 @@
 import sys
 
-from itertools import cycle, chain, product, repeat
-from functools import reduce
-from random import shuffle, choice, random
 from clases import Barco
 from clases import Case
 from clases.Case import *
@@ -12,10 +9,7 @@ from clases.Conventions import *
 
 
 from introducir import (
-    solicitar_introducir_numero_extremo,
     solicitar_introducir_si_o_no,
-    solicitar_introducir_letra,
-    solicitar_introducir_palabra,
     solicitar_introducir_casilla,
 )
 
