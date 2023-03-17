@@ -2,6 +2,7 @@ import sys
 
 from clases import Barco
 from clases import Case
+from clases import Tablero
 from clases.Case import *
 from clases.Barco import *
 from clases.Tablero import *
@@ -54,7 +55,7 @@ def jugar_una_partida():
     """Algoritmo de una partida"""
     # Creamos un tablero de juego vacío
 
-    tablero = TaTablero()
+    tablero = Tablero()
 
     while True:
         tablero.ver()
@@ -65,6 +66,10 @@ def jugar_una_partida():
             # Si el juego ha terminado, salimos de la función
             tablero.ver()
             return
+
+def new_func():
+    tablero = Tablero()
+    return tablero
 
 
 def elegir_jugarOtra():
