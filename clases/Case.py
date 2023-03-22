@@ -1,5 +1,5 @@
 from numpy import product
-from clases import Barco
+from .import Barco
 from clases import Tablero
 from .import Case
 from juego import CASO_AGUA, CASO_NO_JUGADO, CASO_TOCADO
@@ -56,7 +56,10 @@ def jugar(self):
 def generar_casillas():
   for x, y in product(range(tablero_num_lineas),
                       range(tablero_num_columnas)):
-      case = Case(x, y)
+      case = new_func(x, y)
+
+def new_func(x, y):
+    return Case 
 def __str__(self):
   """Sobrecarga del método de transformación en cadena"""
   if not self.jugada:
