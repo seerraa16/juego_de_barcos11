@@ -1,6 +1,6 @@
 # Juego de barcos 
-En este repositorio, arreglaremos un codigo dado.
-
+###En este repositorio, arreglaremos un codigo dado.
+#### Link del repositorio: https://github.com/seerraa16/juego_de_barcos11.git
 
 
 
