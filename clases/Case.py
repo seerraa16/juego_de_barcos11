@@ -45,7 +45,7 @@ def jugar(self):
   self.jugadas.add(self)
   
   if self.barco is not None:
-      if len(casillas - self.casillas_jugadas) == 0:
+      if len(self.casillas - self.casillas_jugadas) == 0:
           print("Hundido !!")
       else:
           print("Tocado !")
@@ -56,8 +56,7 @@ def jugar(self):
 def generar_casillas():
   for x, y in product(range(tablero_num_lineas),
                       range(tablero_num_columnas)):
-      Case(x, y)
-
+      instances[x, y] = Case(x, y)
 def __str__(self):
   """Sobrecarga del método de transformación en cadena"""
   if not self.jugada:
