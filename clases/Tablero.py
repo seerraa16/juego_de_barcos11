@@ -5,17 +5,17 @@ from clases.Barco import generar_barcos
 from clases.Case import generar_casillas
 
   # performance / legibilidad:
-  num_lineas = Conventions.tablero_num_lineas
-  num_columnas = Conventions.tablero_num_columnas
-  num2l = Conventions.generar_num_linea
-  num2c = Conventions.generar_num_columna
+num_lineas = Conventions.tablero_num_lineas
+num_columnas = Conventions.tablero_num_columnas
+num2l = Conventions.generar_num_linea
+num2c = Conventions.generar_num_columna
 
 @staticmethod
 def __init__(self):
 # Creamos las casillas:
-  generar_casillas()
+  self.generar_casillas() 
 # Creamos los barcos:
-  generar_barcos()
+  self.generar_barcos()
  # Creamos la herramienta para poder seguir la situación
   self.casillas_jugadas = set()
   self.casillas_tocadas = set()
