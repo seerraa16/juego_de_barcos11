@@ -13,9 +13,9 @@ num2c = Conventions.generar_num_columna
 @staticmethod
 def __init__(self):
 # Creamos las casillas:
-  generar_casillas() 
+  self.generar_casillas() 
 # Creamos los barcos:
-  generar_barcos()
+  self.generar_barcos()
  # Creamos la herramienta para poder seguir la situación
   self.casillas_jugadas = set()
   self.casillas_tocadas = set()

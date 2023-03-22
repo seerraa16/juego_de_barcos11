@@ -12,7 +12,7 @@ from clases.Conventions import (
 )
 instances = {}
 jugadas = set()
-
+case = None
 def __init__(self, x, y):
   # Adición de las coordenadas
   self.x = x
@@ -56,7 +56,7 @@ def jugar(self):
 def generar_casillas():
   for x, y in product(range(tablero_num_lineas),
                       range(tablero_num_columnas)):
-      instances[x, y] = Case(x, y)
+      case = Case(x, y)
 def __str__(self):
   """Sobrecarga del método de transformación en cadena"""
   if not self.jugada:
